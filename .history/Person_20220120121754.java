@@ -18,6 +18,7 @@ class Person {
     //課題3
     //healthを使って身長・体重のデータを更新する
     void updateHealth(double height, double weight) {
-        health.update(height, weight);
+        health.height = height;
+        health.weight = weight;
     }
 }

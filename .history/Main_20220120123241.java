@@ -32,7 +32,7 @@ public class Main {
         System.out.println("身長は" + person.health.height + "mです");
         System.out.println("体重は" + person.health.weight + "kgです");
         System.out.println("BMIは" + person.health.bmi() + "です");
-        if(person.health.isHealthy()){
+        if(person.health.isHealthy){
             System.out.println("標準値です");
         } else{
             System.out.println("標準値の範囲外です");
