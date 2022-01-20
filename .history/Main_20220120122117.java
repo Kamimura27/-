@@ -9,8 +9,8 @@ public class Main {
 
         //課題3
         //身長,体重,BMIをHealthクラスで定義および計算するように変更する
-        person.updateHealth(1.735, 67.0);
-        printData(person);
+        double height = 1.735;
+        double weight = 67.0;
         
 
         //課題4(Bot)
@@ -29,10 +29,10 @@ public class Main {
     public static void printData(Person person) {
         System.out.println("私の名前は" + person.name + "です");
         System.out.println("年齢は" + person.age + "歳です");
-        System.out.println("身長は" + person.health.height + "mです");
-        System.out.println("体重は" + person.health.weight + "kgです");
-        System.out.println("BMIは" + person.health.bmi() + "です");
-        if(person.health.isHealthy()){
+        System.out.println("身長は" + height + "mです");
+        System.out.println("体重は" + weight + "kgです");
+        System.out.println("BMIは" + bmi + "です");
+        if(Health.isHealthy){
             System.out.println("標準値です");
         } else{
             System.out.println("標準値の範囲外です");
